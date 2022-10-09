@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
+
+
+::-webkit-input-placeholder { /* Edge */
+    color: #000;
+  }
+
+.auth-container {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    position: relative;
+
+}

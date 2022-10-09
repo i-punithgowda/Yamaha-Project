@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
+
+
+::-webkit-input-placeholder { /* Edge */
+    color: #000;
+  }
+
+.auth-container {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    position: relative;
+
+}
+
+
+.register-container .input-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color:honeydew;
+    height: 100%;
+    border-radius: 25px 0 0 25px;
+    padding: 20px;
+    color:#000
+
+}
+
+.register-container .input-container input[type="text"],input[type="date"],input[type="password"],select {
+    outline: none;
+    border: 1px solid #333;
+    padding: 5px 10px;
+    width: 200px;
+    background: #fbfaff;
+    margin: 10px;
+}
+
+
+
+
+.register-container .input-container textarea {
+    margin: 10px;
+    outline: none;
+    width: 650px;
+    height: 50px;
+    border:1px solid #333;
+}
+
+.register-container .input-container .link {
+    color: #0078AA;
+    font-weight: bold;
+}
+
+.register-container .input-container h5 {
+    margin: 20px;
+}
+
+
+.register-container .input-container .gender {
+    position: relative;
+    left: 40%;
+    margin:10px;
+}
+
+.register-container .input-container .gender input {
+   margin: 10px;
+}
+
+
+.register-container .input-container .password {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+ }
+
+ .register-container .input-container .password .pass-1,.pass-2 {
+   position: relative;
+ }
+
+ .register-container .input-container .password  .ico {
+    position: absolute;
+    top:40%;
+    right:10%;
+}
+
+
+.register-container .input-container .btn-auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    margin-top:20px;
+}
+
+.register-container .input-container .agreement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    margin-top:20px;
+    font-size: 0.8rem;
+}
+
+
+.register-container .input-container .agreement input{
+margin-right: 10px;
+}
+
+
+.register-container .input-container .btn-auth button{
+    padding:5px 10px;
+    outline:none;
+    border:none;
+    background-color: #00C8BA;
+    width:300px;
+    border-radius: 8px;
+    color:#fff;
+    font-weight: bold;
+}
+
+
+
+.register-container .input-container .o-auth {
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+}
+
+
+ 
+ 
+
+
+.register-container .image-container img {
+    width: 400px;
+    height: 100%;
+    border-radius: 0 25px 25px 0;
+}
