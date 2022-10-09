@@ -8,19 +8,22 @@ import loginImg from '../../assets/images/loginImg.jpg'
 import UserAvatar from '../../assets/images/avatarUser.png'
 import { GoogleLogin } from '@react-oauth/google';
 import jwt_decode from "jwt-decode";
+import { useNavigate } from "react-router-dom";
 
 
 import './auth-login.css'
 function UserLogin() {
 
+    const navigate=useNavigate()
+    
     const [username, setUserName] = useState('')
     const [password, setPassword] = useState('')
-    const [passwordState, setPasswordState] = useState(true);
+    const [passwordState, setPasswordState] = useState(true)
     const [checked, setChecked] = useState(false)
 
 
     const userLogin = () => {
-
+        navigate('/user')
     }
 
 
@@ -78,7 +81,7 @@ function UserLogin() {
 
 
                     <div className="btn-auth">
-                        <button onClick={userLogin} >Login</button>
+                        <button onClick={userLogin}>Login</button>
 
                     </div>
                     <div className="new-user">

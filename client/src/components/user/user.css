@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
+
+.user-home {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100vw;
+    height: 100vh;
+    margin-top:20px;
+}
+
+
+.user-home .products-container {
+    color: #fff;
+    width: 100%;
+    border-radius: 25px;
+
+
+}
+
+.user-home .products-container .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.user-home .products-container .header div img {
+    width: 50px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+
+
+.user-home .products-container .products-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+    position: relative;
+
+}
+
+.user-home .products-container .products-banner img {
+    width: 1200px;
+    height: 300px;
+    border-radius: 25px;
+
+}
+
+.user-home .products-container .products-banner div {
+    position: absolute;
+    right: 15%;
+}
+
+.user-home .products-container .products-banner div h4 {
+    font-weight: bold;
+    color: #231673;
+}
+
+
+.user-home .products-container .products-section {
+    margin-top: 50px;
+    width: 100%;
+    margin-left: 150px;
+}
+
+
+.user-home .products-container .products-section .trending-bikes,.most-purchased {
+   display:flex;
+   overflow: auto;
+   padding:20px;
+   width:1200px;
+}
+
+
+.user-home .products-container .products-section .trending-bikes .each-card , .most-purchased .each-card{
+   margin-right:20px;
+ }
+
+.user-home .products-container .products-section .trending-bikes .img-product , .most-purchased .img-product {
+  width:200px;
+  height:200px;
+  border-radius: 15px;
+ }
+
+.user-home .products-container .products-section Link {
+   text-decoration: none;
+   font-size: 0.8rem;
+ }
+
+ .user-home .products-container .purchased {
+   margin-top:20px;
+  }
+ 
+
+
+ ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }

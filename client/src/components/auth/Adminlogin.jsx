@@ -6,7 +6,7 @@ import { faEye } from '@fortawesome/free-solid-svg-icons';
 import { faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import loginImg from '../../assets/images/adminLogin.jpg'
 import AdminAvatar from '../../assets/images/avatarAdmin.png'
-
+import { useNavigate } from 'react-router-dom';
 
 import './auth-login.css'
 function AdminLogin() {
@@ -15,10 +15,10 @@ function AdminLogin() {
     const [password, setPassword] = useState('')
     const [passwordState, setPasswordState] = useState(true);
     const [checked, setChecked] = useState(false)
-
+    const navigate=useNavigate()
 
     const userLogin = () => {
-
+        navigate("/admin")
     }
 
 
