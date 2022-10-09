@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
 
 
-::-webkit-input-placeholder { /* Edge */
+::-webkit-input-placeholder {
+    /* Edge */
     color: #000;
-  }
+}
 
 .auth-container {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
+
 }
 
 .login-container {
@@ -15,6 +17,142 @@
     justify-content: center;
     align-items: center;
     height: 600px;
-    position: relative;
 
+
+}
+
+.login-container .login-input-container {
+    background-color: #fff;
+    padding: 20px;
+    height: 100%;
+    width: 30%;
+    border-radius: 25px 0 0 25px;
+
+}
+
+.login-container .login-input-container .container-heading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    flex-direction: column;
+
+}
+
+
+.login-container .login-input-container .admin-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+}
+
+.login-container .login-input-container .admin-img img{
+    width: 150px;
+}
+
+.login-container .login-input-container .form {
+    margin-top:20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-container .login-input-container .form .inputField {
+    outline: none;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    background: #fbfaff;
+    margin: 10px;
+    width: 300px;
+}
+
+
+.login-container .login-input-container .form div {
+    position: relative;
+}
+
+.login-container .login-input-container .form div .ico {
+    position: absolute;
+    right: 10%;
+    top: 40%;
+}
+
+
+.login-container .login-input-container .validation {
+    display:flex;
+    width:100%;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-top: 10px;
+    
+}
+
+.login-container .login-input-container .validation div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.login-container .login-input-container .validation input ,.link-forgot,.remember{
+   text-decoration: none;
+   color:#000;
+   font-size: 0.8rem;
+}
+
+.login-container .login-input-container .btn-auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    margin-top:20px;
+}
+
+.login-container .login-input-container .btn-auth button{
+    padding:5px 10px;
+    outline:none;
+    border:none;
+    background-color: #00C8BA;
+    width:300px;
+    border-radius: 8px;
+    color:#fff;
+    font-weight: bold;
+}
+
+.login-container .login-input-container .new-user{
+    margin-top:10px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    
+}
+
+
+.login-container .login-input-container  .o-auth {
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+}
+
+
+
+.login-container .login-image-container {
+    height: 100%;
+
+}
+
+.login-container .login-image-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 25px 25px 0;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.9);
 }

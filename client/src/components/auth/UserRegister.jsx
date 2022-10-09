@@ -76,7 +76,7 @@ const OnGoogleAuth=(credentialResponse)=>{
             </div>
             <div className="register-container">
                 <div className="input-container">
-                    <span>Have an account ? <Link to="/userlogin" className='link' >Login </Link> </span>
+                    <span style={{fontSize:'0.8rem'}}>Have an account ? <Link to="/userlogin" style={{textDecoration:'none'}} >Login </Link> </span>
                     <h5>Welcome to <span style={{ color: '#D61C4E' }}>Bangalore Wheels</span>! Lets Sign you up.</h5>
                     <div>
                         <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Name" />
