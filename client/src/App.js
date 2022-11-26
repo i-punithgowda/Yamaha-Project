@@ -10,6 +10,8 @@ import Userlogin from './components/auth/Userlogin';
 import Loadingscreen from './components/Loadingscreen';
 import UserRegister from './components/auth/UserRegister';
 import Bikes from './components/user/Bikes'
+import Profile from './components/user/Profile/Profile';
+
 
 
 function App() {
@@ -34,7 +36,8 @@ setLoading(false)
     <Route exact path="/userlogin" element={<Userlogin />} />
     <Route exact path="/adminlogin" element={<Adminlogin />} />
     <Route exact path="/userregister" element={<UserRegister />} />
-    <Route exact path="/products/:name" element={<Bikes />} />
+    <Route exact path="/products/" element={<Bikes />} />
+    <Route exact path="/profile" element={<Profile />} />
     <Route path="*" element={<Error />}/>
    </Routes>
    </Router>
@@ -46,3 +49,4 @@ setLoading(false)
 }
 
 export default App;
+

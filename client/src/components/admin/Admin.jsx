@@ -1,8 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import Dashboard from './Dashboard/Dashboard'
+import './dashboard.css'
 
 function Admin() {
+
+    useEffect(()=>{
+        localStorage.setItem("dashboardState","home")
+    },[])
+
     return (
-        <div>ADMIN DASHBOARD</div>
+        <div className="admin-dashboard">
+            <Dashboard />
+        </div>
     )
 }
 

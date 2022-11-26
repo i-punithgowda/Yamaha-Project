@@ -7,6 +7,9 @@ import { faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import loginImg from '../../assets/images/adminLogin.jpg'
 import AdminAvatar from '../../assets/images/avatarAdmin.png'
 import { useNavigate } from 'react-router-dom';
+import axios from "axios";
+
+
 
 import './auth-login.css'
 function AdminLogin() {
@@ -18,8 +21,28 @@ function AdminLogin() {
     const navigate=useNavigate()
 
     const userLogin = () => {
-        navigate("/admin")
+
+        const data={username:username,password:password}
+
+      
+        axios.post('http://localhost:4000/',{
+            data:data
+        }).then((response)=>{
+            if(response.data==true){
+                alert("Welcome admin")
+                navigate("/admin")
+                setUserName('')
+                setPassword('')
+            }else{
+                alert("Wrong username or password")
+                setUserName('')
+                setPassword('')
+            }
+        })
+       
+        
     }
+
 
 
 

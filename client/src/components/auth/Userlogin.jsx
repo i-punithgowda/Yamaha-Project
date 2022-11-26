@@ -9,21 +9,40 @@ import UserAvatar from '../../assets/images/avatarUser.png'
 import { GoogleLogin } from '@react-oauth/google';
 import jwt_decode from "jwt-decode";
 import { useNavigate } from "react-router-dom";
+import axios from 'axios';
 
 
 import './auth-login.css'
 function UserLogin() {
-
-    const navigate=useNavigate()
-    
     const [username, setUserName] = useState('')
     const [password, setPassword] = useState('')
     const [passwordState, setPasswordState] = useState(true)
     const [checked, setChecked] = useState(false)
 
 
-    const userLogin = () => {
-        navigate('/user')
+    const navigate=useNavigate()
+    
+   
+
+    const userLogin = async () => {
+        
+        const response = await axios.post('http://localhost:4000/userlogin',{
+            data:{username:username,password:password}
+        })
+        
+        if(response.data==true){
+            alert("Welcome !")
+            navigate('/user',{state:{name:username}})
+            setUserName('')
+            setPassword('')
+        }else{
+            alert("Username or password is wrong!")
+            setUserName('')
+            setPassword('')
+        }
+        
+        
+     
     }
 
 

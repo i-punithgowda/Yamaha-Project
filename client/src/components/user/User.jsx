@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React,{useState,useEffect} from 'react'
+import { Link, useNavigate,useLocation } from 'react-router-dom'
 import './user.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSignOut } from '@fortawesome/free-solid-svg-icons';
@@ -11,95 +11,25 @@ import MT15 from '../../assets/images/Yamaha-bikes/mt15.jpg'
 import R15 from '../../assets/images/Yamaha-bikes/r15.jpg'
 import Ray from '../../assets/images/Yamaha-bikes/ray.jpg'
 import Footer from '../../components/homecomponents/FooterHome'
-
+import MT152 from '../../assets/images/Yamaha-bikes/mt15-2.jpg'
+import R62 from '../../assets/images/Yamaha-bikes/r62.jpg'
 
 
 function User() {
 
-
-    const arrayOfTrendingBikes = [{
-        name: 'Yamaha fascino',
-        src: Fascino
-    }, {
-        name: 'Yamaha FZ',
-        src: FZ
-    }, {
-        name: 'Yamaha Ray',
-        src: Ray
-    },
-    {
-        name: 'Yamaha Ray',
-        src: Ray
-    },
-    {
-        name: 'Yamaha Ray',
-        src: Ray
-    },
-    {
-        name: 'Yamaha Ray',
-        src: Ray
-    },
-    {
-        name: 'Yamaha Ray',
-        src: Ray
-    },
-    {
-        name: 'Yamaha Ray',
-        src: Ray
-    },
-    {
-        name: 'Yamaha Ray',
-        src: Ray
-    }
-
-    ]
-
-    const arrayOfMostPurchaseBikes = [{
-        name: 'Yamaha R15',
-        src: R15
-    }, {
-        name: 'Yamaha MT15',
-        src: MT15
-    }, {
-        name: 'Yamaha Fascino',
-        src: Fascino
-    },
-    {
-        name: 'Yamaha Fascino',
-        src: Fascino
-    },
-    {
-        name: 'Yamaha Fascino',
-        src: Fascino
-    },
-    {
-        name: 'Yamaha Fascino',
-        src: Fascino
-    },
-    {
-        name: 'Yamaha Fascino',
-        src: Fascino
-    },
-    {
-        name: 'Yamaha Fascino',
-        src: Fascino
-    },
-    {
-        name: 'Yamaha Fascino',
-        src: Fascino
-    },
-    {
-        name: 'Yamaha Fascino',
-        src: Fascino
-    },
-    {
-        name: 'Yamaha Fascino',
-        src: Fascino
-    },
+    const navigate=useNavigate()
+    const location=useLocation()
+    const [username,setUsername]=useState('')
+   
     
-    ]
 
+    useEffect(()=>{
+        setUsername(location.state.name)
+        console.log(username)
+    },[])
 
+    
+ 
 
 
 
@@ -108,10 +38,15 @@ function User() {
             <div className="products-container">
                 <div className="header">
                     <h5>Bangalore wheels - <span style={{ color: 'red' }}>Yamaha</span></h5>
-                    <div className="right-section">
+                    <div className="right-section" >
                         <img src={userMaleAvatar} alt="" />
-                        <FontAwesomeIcon icon={faSignOut} />
+                        <FontAwesomeIcon icon={faSignOut} onClick={()=>navigate("/")} />
+                      <span
+                       style={{marginLeft:'10px',cursor:'pointer'}}
+                       onClick={(e)=>navigate("/profile",{state:{name:username}})}
+                       > {username==='' ? null : username }</span>
                     </div>
+                   
                 </div>
 
                 <div className='products-banner'>
@@ -121,41 +56,11 @@ function User() {
                     </div>
                 </div>
 
-                <div className="products-section">
-                   <div className='trending'>
-                   <h5>Trending bikes</h5>
-                   </div>
-
-<div className="trending-bikes">
-
-{arrayOfTrendingBikes.map((bike)=>{
-   return <div key={bike.name} className="each-card">
-    <Link to={`/products/${bike.name}`}><img src={bike.src} className="img-product" /></Link>
-    </div>
- })}
-    
-</div>
-
-<div>
-<div className='purchased'>
-<h5>Most purchased bikes</h5>
-</div>
-
-<div className="most-purchased">
-    {
-        arrayOfMostPurchaseBikes.map((bike)=>{
-            return <div key={bike.name} className="each-card">
-             <Link to={`/products/${bike.name}`}><img src={bike.src} className="img-product" /></Link>
-             </div>
-          })}
-</div>
-             
-    
-</div>
-
-
-                </div>
+                
+                
+                <div className="user-footer">
                 <Footer />
+                </div>
             </div>
             
 

@@ -1,0 +1,390 @@
+.admin-dashboard {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard {
+    width: 1000px;
+    height: 700px;
+    background-color: #fff;
+    border-radius: 30px;
+    display: flex;
+
+}
+
+.dashboard-sidebar {
+    background: white;
+    height: 100%;
+    width: 300px;
+    border-radius: 30px 0 0 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.dashboard-layout {
+    background-color: #F3F1EF;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+
+.dashboard-sidebar .dashboard-header {
+    font-weight: bold;
+
+}
+
+.dashboard-sidebar .adminDetails .adminAvatar {
+    width: 150px;
+}
+
+.dashboard-sidebar .adminDetails .adminAvatar img {
+    width: 100%;
+}
+
+
+.dashboard-sidebar .dashboard-components {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+
+
+
+}
+
+.dashboard-sidebar .dashboard-components .components {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    align-items: center;
+    height: 150px;
+    padding: 10px 40px;
+    background-color: #6858d1;
+    color: #fff;
+    margin-top: 5px;
+    border-radius: 8px;
+}
+
+.dashboard-sidebar .dashboard-components .components .icon {
+    margin-right: 10px;
+}
+
+
+.dashboard-sidebar .admin-signout {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.dashboard-sidebar .admin-signout .icon {
+    margin-right: 10px;
+
+}
+
+
+.dashboard-sidebar .hover-effect {
+    cursor: pointer;
+}
+
+
+
+.dashboard .dashboard-layout {
+    width: 100%;
+}
+
+.dashboard.dashboard-layout .dashboard-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.dashboard .dashboard-layout .dashboard-home .upper-section,
+.lower-section {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 50px;
+}
+
+
+.dashboard .dashboard-layout .dashboard-home .upper-section {
+    display: flex;
+    width: 100%;
+}
+
+
+.dashboard .dashboard-layout .dashboard-home .lower-section {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.dashboard .dashboard-layout .dashboard-home .graph {
+    margin-top:100px;
+    width: 600px;
+}
+
+
+.dashboard .dashboard-layout .dashboard-home .upper-section .performance-data {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+
+.dashboard .dashboard-layout .dashboard-home .upper-section .performance-data .statistics-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6858d1;
+    border-radius: 8px;
+    width: 150px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.dashboard .dashboard-layout .dashboard-home .upper-section .performance-data .statistics-banner .icon {
+    margin-right: 10px;
+    background-color: #ddd;
+    color: #6858d1;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+
+.dashboard .dashboard-layout .dashboard-home .upper-section .performance-data .statistics-banner .statistics-data {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+
+
+
+.dashboard .dashboard-layout .dashboard-home .upper-section .performance-data .statistics-banner .statistics-data {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.dashboard .dashboard-layout .dashboard-home .upper-section .sales {
+    width: 50%;
+    padding: 20px;
+}
+
+
+.dashboard .dashboard-layout .dashboard-home .upper-section .sales .sales-header {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.dashboard .dashboard-layout .dashboard-home .upper-section .sales .sales-header .sales-profit {
+
+    font-weight: bold;
+    font-size: 1.3rem;
+
+}
+
+.dashboard .dashboard-layout .dashboard-home .upper-section .sales .sales-img {
+    margin-top: 20px;
+    width: 300px;
+    height: 100px;
+
+}
+
+.dashboard .dashboard-layout .dashboard-home .upper-section .sales .sales-img img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.8);
+    transition: transform .5s ease;
+}
+
+
+.dashboard .dashboard-layout .dashboard-home .upper-section .sales .sales-img img:hover {
+    transform: scale(1.2);
+
+}
+
+
+
+.dashboard .dashboard-layout .common-subDashboard {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.dashboard .dashboard-layout .common-subDashboard .container {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.dashboard .dashboard-layout .common-subDashboard .container .customer-tables {
+    margin-top: 50px;
+}
+
+
+.dashboard .dashboard-layout .common-subDashboard .container .delete-customers {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.dashboard .dashboard-layout .common-subDashboard .container .delete-customers .imgDelete {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+
+}
+
+
+
+.delete-customers .delete-data input {
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    outline: none;
+    padding: 8px 12px;
+}
+
+
+.delete-customers .delete-data button {
+    background-color: #6858d1;
+    padding: 8px 12px;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    color: #fff;
+}
+
+
+.add-bike {
+    width: 100%;
+    height: 100%;
+    margin-top:50px;
+}
+
+.orders{
+    margin-top:200px;
+}
+
+.add-bike .input-field input h3 {
+    margin-top: 100px;
+}
+
+.add-bike .input-field input {
+    margin: 10px;
+    padding: 8px 12px;
+    outline: none;
+}
+
+
+.add-bike .btn-save {
+    background-color: #6858d1;
+    padding: 8px 12px;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.add-Accesory .input-field input {
+    margin: 10px;
+    padding: 8px 12px;
+    outline: none;
+    margin-top: 20px;
+}
+
+
+
+.add-Accesory .btn-save {
+    background-color: #6858d1;
+    padding: 8px 12px;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    color: #fff;
+}
+
+
+/*Purchased data*/
+
+.purchased-dataEntry {
+    margin-top: 150px;
+}
+
+ .btn-save {
+    background-color: #6858d1;
+    padding: 8px 12px;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    color: #fff;
+}
+
+
+/*Warehouse*/
+
+.warehouse{
+    width:100%;
+    height:100%;
+    margin-top:150px;
+}
+
+
+.warehouse .input-fields input {
+    margin: 10px;
+    padding: 8px 12px;
+    outline: none;
+    
+}
+
+
+/* 
+Employee 
+*/
+
+.employee {
+    margin-top:100px;
+    width:100%;
+    height:100%;
+}
+
+.employee .input-fields input{
+    margin: 10px;
+    padding: 8px 12px;
+    outline: none;   
+}
+

@@ -8,6 +8,7 @@
     width: 100vw;
     height: 100vh;
     margin-top:20px;
+   
 }
 
 
@@ -44,7 +45,7 @@
 
 .user-home .products-container .products-banner img {
     width: 1200px;
-    height: 300px;
+    height: 350px;
     border-radius: 25px;
 
 }
@@ -60,39 +61,8 @@
 }
 
 
-.user-home .products-container .products-section {
-    margin-top: 50px;
-    width: 100%;
-    margin-left: 150px;
-}
 
 
-.user-home .products-container .products-section .trending-bikes,.most-purchased {
-   display:flex;
-   overflow: auto;
-   padding:20px;
-   width:1200px;
-}
-
-
-.user-home .products-container .products-section .trending-bikes .each-card , .most-purchased .each-card{
-   margin-right:20px;
- }
-
-.user-home .products-container .products-section .trending-bikes .img-product , .most-purchased .img-product {
-  width:200px;
-  height:200px;
-  border-radius: 15px;
- }
-
-.user-home .products-container .products-section Link {
-   text-decoration: none;
-   font-size: 0.8rem;
- }
-
- .user-home .products-container .purchased {
-   margin-top:20px;
-  }
  
 
 
